@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*폰트 선언*/
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
+@import url("nanumbarungothic.css");
+
+/*초기화 및 상속*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+a,
+span,
+i,
+strong {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input,
+select,
+button {
+	vertical-align: middle;
+	border-radius: 0;
+	appearance: none;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	line-height: 1;
+	font-family: "Chakra Petch", "nanumbarungothic", serif;
+	text-align: center;
+}
+
+.cl::before {
+	content: "";
+	display: block;
+}
+.cl::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.blind {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "nanumbarungothic", "맑은 고딕", "Malgun Gothic", "돋움",
+		"Dotum", sans-serif;
+	line-height: 1.5;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.in {
+	padding: 0 10px;
+}
+
+/*span태그로 줄바꿈하기*/
+#headline .txt .tit span,
+#headline .txt p span,
+#contents .tit span {
+	display: block;
+}
+
+/*공통 속성*/
+#headline .txt .tit {
+	font-size: calc(2.4rem + ((1vw - 0.32rem) * 3.8636));
+}
+#contents .tit {
+	font-size: calc(2.4rem + ((1vw - 0.32rem) * 2.7273));
+}
+#contents {
+	background: #000;
+}
+#contents .section {
+	padding: 40px 0;
+}
+
+/*헤드라인*/
+#headline {
+	background: linear-gradient(#fbcd69 0%, #ca1968 30%, #000000 90%);
+	min-height: 470px;
+	text-align: center;
+}
+#headline .logo {
+	width: 32.5%;
+	max-width: 145px;
+	padding-top: 10px;
+}
+#headline .pic {
+	width: 88.75%;
+	max-width: 429px;
+	display: inline-block;
+	padding-top: 40px;
+}
+#headline .txt {
+	position: relative;
+	left: 50%;
+	top: -50px;
+	transform: translatex(-50%);
+}
+#headline .txt p {
+	font-size: 1.6rem;
+}
+#headline .txt p:nth-of-type(1) {
+	margin-top: 30px;
+}
+
+/*콘텐츠_when*/
+#contents .when {
+	text-align: center;
+}
+#contents .when_list li {
+	width: calc(100% - 8rem);
+	max-width: 220px;
+	height: 260px;
+	min-height: 260px;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+#contents .when_list li:nth-of-type(1) {
+	background: #ca1968;
+}
+#contents .when_list li:nth-of-type(2) {
+	background: #fbcd69;
+}
+#contents .when_list li:nth-of-type(3) {
+	background: #f18469;
+	margin-bottom: 40px;
+}
+
+#contents .when_list .txt {
+	padding: 35px 0;
+	font-size: calc(1.6rem + ((1vw - 0.32rem) * 0.4545));
+}
+#contents .when_list .icon img {
+	width: 85%;
+	display: inline-block;
+}
+
+#contents .notice {
+	font-size: 1.4rem;
+	color: #777;
+}
+#contents .notice strong {
+	color: #fff;
+}
+
+/*콘텐츠_guide*/
+#contents .guide {
+	background: url(../images/map.png) no-repeat center;
+	background-size: contain;
+}
+#contents .guide .tit {
+	padding-bottom: 40px;
+}
+#contents .guide_list {
+	width: 262px;
+	margin: 0 auto;
+}
+#contents .guide_list li {
+	position: relative;
+	padding: 6px 0;
+	font-size: calc(1.6rem + ((1vw - 0.32rem) * 0.2273));
+}
+#contents .guide_list li::before {
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 16px;
+	background: #fff;
+	position: absolute;
+	left: -16px;
+	top: 7px;
+}
+
+/*콘텐츠_form_area*/
+#contents .form {
+	background: url(../images/form_line.png) no-repeat 50% 80%;
+	background-size: contain;
+}
+#contents .form_area .tit {
+	padding-bottom: 40px;
+}
+#contents .form_list {
+	width: 93%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+#contents .form_list .center {
+	text-align:center;
+}
+
+#contents .form_list label {
+	font-size: calc(1.6rem + ((1vw - 0.32rem) * 0.2273));
+}
+
+#contents .form_list li:nth-of-type(1) label {
+	margin-right: 29px;
+}
+
+#contents .form_list input,
+#contents .form_list select {
+	width: 75%;
+	height: 40px;
+	background: #fff;
+	border-radius: 20px;
+	margin: 0 0 15px 10px;
+	padding: 10px;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.ui-widget-header {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #999;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
+	background: #333;
+	border: 1px solid #333;
+	color: #fff;
+}
+
+#contents .btn_cta {
+	width: 100%;
+	height: 40px;
+	background: #ca1968;
+	color: #fff;
+	border-radius: 20px;
+	margin: 25px auto 0;
+	font-size: 1.6rem;
+}
+
+/*푸터*/
+#footer {
+	background: #000;
+	font-size: 1.4rem;
+	color: #777;
+	padding: 15px 0;
+}
+
+/*미디어 쿼리*/
+@media screen and (min-width: 330px) {
+	#contents .guide_list {
+		width: 280px;
+	}
+}
+
+@media screen and (min-width: 460px) {
+	#contents .when_list {
+		max-width: 675px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	#contents .when_list li {
+		width: calc(100% / 3 - 0.5rem);
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.in {
+		padding: 0 15px;
+	}
+
+	#headline {
+		min-height: 550px;
+	}
+	#headline .txt p span {
+		display: inline;
+	}
+	#headline .txt {
+		top: -80px;
+	}
+	#headline .logo {
+		width: 25%;
+		padding-top: 15px;
+		max-width: 192px;
+	}
+	#headline .pic {
+		width: 70%;
+		padding-top: 50px;
+		max-width: 570px;
+	}
+
+	#contents .section {
+		padding: 50px 0;
+	}
+
+	#contents .when_list li {
+		width: calc(100% / 3 - 1.5rem);
+		margin-bottom: 50px;
+		max-width: none;
+		min-height: auto;
+	}
+
+	#contents .guide_list {
+		width: 300px;
+	}
+	#contents .guide_list li {
+		font-size: 1.8rem;
+	}
+
+	#contents .form_list {
+		width: 56%;
+		max-width: 450px;
+	}
+	#contents .form_list label {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.in {
+		padding: 0;
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#headline {
+		min-height: 600px;
+	}
+	#headline .txt {
+		top: -110px;
+	}
+	#headline .txt .tit {
+		font-size: 6rem;
+	}
+
+	#headline .pic {
+		width: 57%;
+		padding-top: 70px;
+	}
+	#headline .txt p {
+		font-size: 1.8rem;
+	}
+
+	#contents .tit {
+		font-size: 5rem;
+	}
+	#contents .section {
+		padding: 70px 0;
+	}
+
+	#contents .when_list li {
+		width: calc(100% / 3 - 2rem);
+	}
+	#contents .when_list .txt {
+		font-size: 2rem;
+	}
+
+	#contents .form_list {
+		width: 40%;
+		max-width: 450px;
+	}
+	#contents .form {
+		background: url(../images/form_runner.png) no-repeat right bottom;
+		background-size: 40%;
+	}
+}

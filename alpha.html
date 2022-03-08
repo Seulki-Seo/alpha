@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>2022 ALPHA VIRTUAL MARATHON</title>
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#date").datepicker({
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="headline">
+        <div class="in">
+            <h1 class="logo">
+                <img src="images/logo.png" alt="ALPHA X RUNDAY">
+            </h1>
+            <div class="head_wrap">
+                <div class="pic">
+                    <img src="images/head_runner.png" alt="ALPHA RUNNER">
+                </div>
+                <div class="txt">
+                    <h2 class="tit">
+                        <span>ALPHA RUNNING CREW</span>
+                        2022 VIRTUAL MARATHON
+                    </h2>
+                    <p>내가 달리는 곳이 바로 대회장이 된다!</p>
+                    <p><span>알파는 변화를 위해 도전하는</span> 모두를 응원하는 러닝 크루입니다.</p>
+                    <p><span>일상을 러닝으로, 러닝으로 일상을 바꿀</span> 새해 행사를 개최합니다.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="contents">
+        <div class="in">
+            <section class="section when">
+                <ul class="when_list">
+                    <li>
+                        <h3 class="txt">달리고 싶은 곳에서</h3>
+                        <span class="icon">
+                            <img src="images/content_location.png" alt="내가 달리고 싶은 어느 장소에서든지 가능합니다!">
+                        </span>
+                    </li>
+                    <li>
+                        <h3 class="txt">달리고 싶을 때</h3>
+                        <span class="icon">
+                            <img src="images/content_time.png" alt="언제든지 달리고 싶을 때 달리세요!">
+                        </span>
+                    </li>
+                    <li>
+                        <h3 class="txt">내가 원하는 방법으로</h3>
+                        <span class="icon">
+                            <img src="images/content_phone.png" alt="거리와 기록이 저장되기만 한다면 어떤 방법으로든 달릴 수 있습니다!">
+                        </span>
+                    </li>
+                </ul>
+                <div class="notice">
+                    <p>* <strong>거리와 기록이 저장되는 어플</strong>이라면 2022 VIRTUAL MARATHON에 모두 참여 가능합니다.</p>
+                </div>
+            </section>
+        </div>
+        <div class="in">
+            <section class="section guide">
+                <h2 class="tit">
+                    <span>ALPHA RUNNING CREW</span>
+                    2022 VIRTUAL MARATHON
+                </h2>
+                <ul class="guide_list">
+                    <li>
+                        <p>모집 기간: 2022. 02. 01 - 2022. 02. 28</p>
+                    </li>
+                    <li>
+                        <p>대회 기간: 2022. 03. 01 - 2022. 03. 31</p>
+                    </li>
+                    <li>
+                        <p>참가 자격: 변화를 꿈꾸는 누구나!</p>
+                    </li>
+                    <li>
+                        <p>인증 거리: 20.22km or 2.2km</p>
+                    </li>
+                    <li>
+                        <p>대회 문의: 02 123 4567</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="in form">
+            <section class="section form_area">
+                <h2 class="tit">
+                    <span>1th ALPHA</span>
+                    2022 VIRTUAL MARATHON
+                </h2>
+                <form>
+                    <ul class="form_list">
+                        <li>
+                            <div class="center">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" title="이름" autocomplete="off" required="이름을 입력하세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="center">
+                                <label for="date">생년월일</label>
+                                <input type="text" id="date" title="생년월일" autocomplete="off">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="center">
+                                <label for="tel">전화번호</label>
+                                <input type="text" id="tel" title="전화번호" autocomplete="off">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="center">
+                                <label for="kind">참가종목</label>
+                                <select name="event" id="kind" title="참가종목">
+                                    <option value="종목을 선택하세요.">종목 선택하기</option>
+                                    <option value="20.22">20.22km</option>
+                                    <option value="2.22">2.2km</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn_cta">참가신청하기</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="in">
+            <small>Copyright &copy; ALPHA. All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
