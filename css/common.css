@@ -284,6 +284,7 @@ body {
 	border-radius: 20px;
 	margin: 25px auto 0;
 	font-size: 1.6rem;
+	cursor: pointer;
 }
 
 /*푸터*/
